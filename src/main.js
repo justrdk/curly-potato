@@ -8,16 +8,16 @@ import Hello from './components/Hello';
 Vue.use(VueRouter);
 
 const routes = [{
-  path: '/hello',
-  component: Hello,
+	path: '/hello',
+	component: Hello,
 }];
 
 const router = new VueRouter({
-  routes,
+	routes,
 });
 
 /* eslint-disable no-new */
 new Vue({
-  router,
-  render: h => h(App),
+	router,
+	render: h => h(App),
 }).$mount('#app');
